@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*********** VARIABLE A CHANGER ************/
+
+:root {
+  --main-color:#EF555B ;                /*Couleur principale du salon*/	
+  --main-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/57/architecture-1853365_1280.jpg);  /*Fond image du thème*/ 	
+  --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/ 	
+	
+  --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
+  --main-animation-transition : ease-in 0.5s; /* Animation hover */
+  --content-imagetexte: url(https://picsum.photos/1000/1000);
+}
+
+
+/*******************************************/
+
+
+
+.jumbotron {
+  color: #000000;
+  background: #f4f4f4 ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+    margin-bottom: 1em;
+    background: var(--main-image);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.align-center{
+    text-align: center;
+}
+.jumbotron p{
+	    margin-top: 1rem;
+	font-size: 1.3em;
+    margin-bottom: 0rem;
+}
+.jumbotron span{
+	    font-size: 12px;
+    text-transform: uppercase;
+}
+.alignselfcenter{
+	align-self:center;
+}
+.row{
+	margin-right: 0;
+}
+
+.switchlanguage {
+    text-align: center;
+}
+.switchlanguage li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 7px;    font-size: 12px;
+
+}
+.illustrationherocontainer{
+	display: flex;
+	background: var(--main-image);
+	 background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.switchlanguage li .active{
+	    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--basic-color);
+}
+.switchlanguage ul{
+	padding: 0;
+	margin-bottom: 0;
+}
+img#logo {
+    max-width: 150px;
+}
+.verticalcenter{
+	place-items: center;
+}
+.hundred{
+	height: 100%;
+}
+.hundred img{
+	max-width: 100%;
+}.illustrationhero{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+
+.ctaprincipal {
+    transition: var(--main-animation-transition);
+    -moz-transition: var(--main-animation-transition);
+    -webkit-transition: var(--main-animation-transition);
+    padding: 12px 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-size: 11px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--basic-color);
+	    display: block;
+    width: fit-content;
+        margin: 30px auto 0 auto;
+}
+
+.ctaprincipal:hover {
+    color: var(--basic-color);
+    text-decoration: none;
+    -webkit-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
+}
+.fa, .switchlanguage a{
+	color: var(--main-color);
+}
+.bcimagedutexte{
+    background: var(--content-imagetexte);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+h2{
+    	margin: 1em auto 1em auto;
+}
+.miseenavant{
+    background: var(--main-color);
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    margin: 5em 1em 4em 1em;
+    padding: 2em 2em;
+    text-align: center;
+    color: #ffffff;
+}
+.containercontent{
+    margin-top: 5em;
+}
+.number-container{
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+.number{
+    flex-basis: calc(40% - 20px);
+    margin:0 auto;
+    padding: 3em;
+    background: #ffffff;
+    box-shadow: 3px 6px 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+.number span{
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+}
+.number p{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+.footer{
+    text-align: center;
+    border-top: 1px solid #a1a1a1;
+    padding: 2em 0;
+    margin: 8em 0 0 0;
+    font-size: 12px;
+    color: #a1a1a1;
+}
+@media screen and (max-width: 800px) {
+	.jumbotron > .container > .row{
+		flex-direction: column;
+	}
+}
