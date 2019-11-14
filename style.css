@@ -69,9 +69,9 @@
   background-size: cover;
 }
 .switchlanguage li .active{
-	    padding: 10px;
+    padding: 5px 7px;
     border-radius: 50px;
-    border: 1px solid var(--basic-color);
+    border: 1px solid var(--main-color);
 }
 .switchlanguage ul{
 	padding: 0;
@@ -180,4 +180,27 @@ h2{
 	.jumbotron > .container > .row{
 		flex-direction: column;
 	}
+}
+
+@media screen and (max-width:478px){
+    .text-center{
+        place-content:center;
+    }
+    .containercontent .rowtexte{
+        flex-direction: column;
+        width: 100%;
+    }
+    .bcimagedutexte{
+        margin: 0 auto;
+        min-height: 300px;
+        width: 100%;
+    }
+    .number:first-child {
+        margin-bottom: 2em;
+    }
+    .number {
+    flex-basis: calc(80% - 20px);
+    }
+    .switchlanguage{    margin: 1em 0;}
+    .miseenavant{margin:1em;}
 }
