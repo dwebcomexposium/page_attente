@@ -19,6 +19,55 @@
 /*******************************************/
 
 
+/************** EXEMPLE DE CHANGEMENT ****************/
+
+.imagefix{
+    background: url(https://picsum.photos/1920/1080) !important;
+}
+.imagegif{
+    background: url(https://visualcocaine.org/public/uploads/large/11519389095qeqeumqx1ytugzwmap4mthrhrzd6bvrsixgziavorvlpg2fknp9kemjb0kw91ms4fljbwo4pjm4986gvdvr5enfv7gpvxr0ix72e.gif
+    ) !important;
+}
+.containeroptions {
+    position: fixed;
+    background: #ffffff;
+    padding: 50px;
+    right: 0;
+    transition: ease 0.2s;
+    margin-top: 10vh;
+    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.containeroptions span {
+    display: block;
+    font-size: 10px;
+}
+.containeroptions p.titlecolor {
+    padding-top: 20px;
+    display: block;
+}
+.containeroptions img {
+    width: 25px;
+}
+.containeroptions li{
+    list-style-type: none;
+}
+.containeroptions .setting {
+    position: absolute;
+    left: -55px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
+}
+.containeroptions.settingclose{
+    transform: translateX(39vh);
+}
+.containeroptions.settingopen{
+    transform: translateX(0);
+}  
+
+/****************************************************/
+
 
 .jumbotron {
   color: #000000;
