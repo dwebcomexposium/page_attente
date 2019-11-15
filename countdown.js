@@ -10,7 +10,7 @@ var distance = countDownDate - now;
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown").innerHTML = 
+  document.getElementById("countdown").innerHTML =
   "<p class='nombrecountdown'><span class='chiffrecountdown'>" + days + "</span> <span class='textcountdown'> Jours </span> </p> <p class='deuxpoint'>:</p>" + 
   "<p class='nombrecountdown'><span class='chiffrecountdown'>" + hours + "</span> <span class='textcountdown'> Heures </span> <p class='deuxpoint'>:</p>" + 
   "<p class='nombrecountdown'><span class='chiffrecountdown'>" + minutes + "</span> <span class='textcountdown'> Minutes </span> <p class='deuxpoint'>:</p>" +
