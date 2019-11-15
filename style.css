@@ -294,6 +294,30 @@ h2{
     font-size: 12px;
     color: #a1a1a1;
 }
+@media (orientation: landscape) {
+    .jumbotron > .container > .row{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .counter{
+        width: 95%;
+    }
+    .header{
+        width: 100%;
+        }
+        .jumbotron .alignselfcenter {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            align-items: center;
+        }
+        .containercontent .rowtexte{
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+        }
+}
 @media screen and (max-width: 800px) {
 	.jumbotron > .container > .row{
         flex-direction: column;
@@ -302,27 +326,29 @@ h2{
     .counter{
         width: 95%;
     }
+    .header{
+        width: 100%;
+        }
+        .jumbotron .alignselfcenter {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            place-content: center;
+            align-items: center;
+        }
+        .containercontent .rowtexte{
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+        }
 }
 
 @media screen and (max-width:478px){
     .text-center{
         place-content:center;
     }
-    .header{
-    width: 100%;
-    }
-    .jumbotron .alignselfcenter {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        place-content: center;
-        align-items: center;
-    }
-    .containercontent .rowtexte{
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-    }
+    
+    
     .bcimagedutexte{
         margin: 0 auto;
         min-height: 300px;
