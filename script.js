@@ -19,6 +19,9 @@ $( document ).ready(function() {
         $('.imagePicker').keyup(function() {
             $('body').get(0).style.setProperty("--main-image", "url('" + $(this).val() + "')");
         })
+        $('.pickedlogo').keyup(function() {
+            $('#logo').attr("src",  $(this).val() );
+        })
 
 
         $('#textCheckbox1').on('click',function(){

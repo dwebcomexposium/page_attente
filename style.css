@@ -7,23 +7,26 @@
 
 :root {
   --main-color:#EF555B ;                /*Couleur principale du salon*/	
-  --main-image: url(https://cdn.pixabay.com/photo/2016/11/23/14/57/architecture-1853365_1280.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(https://cdn.pixabay.com/photo/2017/08/02/01/37/dark-2569588_1280.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
-  --color-hero: #000000;   /*** Couleur du texte du héro, h1, date... ***/
+  --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
-  --content-imagetexte: url(https://picsum.photos/1000/1000);
+  --content-imagetexte: url(https://picsum.photos/1000/1000); /*** Image du contenu avec texte à droite ***/
 }
-
 
 /*******************************************/
 
 
-/************** EXEMPLE DE CHANGEMENT ****************/
+
+
+/************** EXEMPLE DE CHANGEMENT/SETTINGS ****************/
 
 .imagefix{
     background: url(https://picsum.photos/1920/1080) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 .imagegif{
     background: url(https://media3.giphy.com/media/xn2tua3QvDIOY/giphy.gif) !important;
@@ -33,12 +36,17 @@
 .containeroptions {
     position: fixed;
     background: #ffffff;
-    padding: 50px;
     right: 0;
     transition: ease 0.2s;
     margin-top: 10vh;
     box-shadow: 0 6px 9px rgba(0,0,0,0.1);
     z-index: 999;
+    
+}
+.insidesetting{
+    max-height: 80vh;
+    overflow: overlay;
+    padding: 50px;
 }
 .containeroptions span {
     display: block;
@@ -72,6 +80,44 @@
 }
 /****************************************************/
 
+.counter {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100px;
+    background: #ffffff;
+    transform: translateY(-131px);
+    margin: 0 auto !important;
+    width: 60%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+.counter p#countdown {
+    width: 100%;
+    margin: 0;
+    color: #000000;
+}
+.counter .nombrecountdown{
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0;
+}
+.counter .nombrecountdown span{
+    display: block;
+}
+.counter .nombrecountdown span.textcountdown{
+    font-size: 11px;
+}
+.counter .nombrecountdown span.chiffrecountdown {
+    font-size: 2em;
+    font-weight: 600;
+}
+.counter .deuxpoint{
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px auto 0 auto;
+    font-size: 1em;
+}
 
 .jumbotron {
   color: #000000;
@@ -138,6 +184,7 @@
 }
 img#logo {
     max-width: 150px;
+    margin-bottom: 2em;
 }
 .verticalcenter{
 	place-items: center;
@@ -238,7 +285,10 @@ h2{
 @media screen and (max-width: 800px) {
 	.jumbotron > .container > .row{
 		flex-direction: column;
-	}
+    }
+    .counter{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width:478px){
@@ -248,6 +298,7 @@ h2{
     .containercontent .rowtexte{
         flex-direction: column;
         width: 100%;
+        margin: 0 auto;
     }
     .bcimagedutexte{
         margin: 0 auto;
