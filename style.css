@@ -60,7 +60,7 @@
     box-shadow: 0 6px 9px rgba(0,0,0,0.1);
 }
 .containeroptions.settingclose{
-    transform: translateX(39vh);
+    transform: translateX(44vh);
 }
 .containeroptions.settingopen{
     transform: translateX(0);
