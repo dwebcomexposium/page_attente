@@ -70,8 +70,8 @@
     padding: 15px;
     box-shadow: 0 6px 9px rgba(0,0,0,0.1);
 }
-.containeroptions.settingclose{
-    transform: translateX(44vh);
+.containeroptions.settingclose {
+    transform: translateX(315px);
 }
 .containeroptions.settingopen{
     transform: translateX(0) !important;
@@ -323,9 +323,7 @@ h2{
         flex-direction: column;
         margin: 0 auto;
     }
-    .containeroptions.settingclose {
-        transform: translateX(39vh);
-    }
+    
     .counter{
         width: 95%;
     }
