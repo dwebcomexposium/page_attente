@@ -13,6 +13,9 @@ $( document ).ready(function() {
           $('.pickedColor').keyup(function() {
             $('body').get(0).style.setProperty("--main-color", $(this).val());
         })
+        $('.pickedColorcolorheader').keyup(function() {
+            $('body').get(0).style.setProperty("--color-hero", $(this).val());
+        })
         $('.imagePicker').keyup(function() {
             $('body').get(0).style.setProperty("--main-image", "url('" + $(this).val() + "')");
         }) 
