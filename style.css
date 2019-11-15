@@ -285,7 +285,8 @@ h2{
 }
 @media screen and (max-width: 800px) {
 	.jumbotron > .container > .row{
-		flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
     }
     .counter{
         width: 95%;
@@ -295,6 +296,13 @@ h2{
 @media screen and (max-width:478px){
     .text-center{
         place-content:center;
+    }
+    .jumbotron .alignselfcenter {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        align-items: center;
     }
     .containercontent .rowtexte{
         flex-direction: column;
