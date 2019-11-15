@@ -18,6 +18,16 @@ $( document ).ready(function() {
         })
         $('.imagePicker').keyup(function() {
             $('body').get(0).style.setProperty("--main-image", "url('" + $(this).val() + "')");
-        }) 
+        })
+
+
+        $('#textCheckbox1').on('click',function(){
+            if($(this).is(':checked'))        {$('.cta1').addClass('none')}
+            else{$('.cta1').removeClass('none')}
+        });
+        $('#textCheckbox2').on('click',function(){
+            if($(this).is(':checked'))        {$('.cta2').addClass('none')}
+            else{$('.cta2').removeClass('none')}
+        });
 
 });

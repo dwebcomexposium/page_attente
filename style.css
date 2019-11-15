@@ -67,7 +67,9 @@
 .containeroptions.settingopen{
     transform: translateX(0);
 }  
-
+.none{
+    display: none !important;
+}
 /****************************************************/
 
 
@@ -84,6 +86,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-hero);
+}
+.jumbotron ul{padding: 0;}
+.jumbotron ul li{
+    list-style-type: none;
+    display: inline-block;
 }
 .align-center{
     text-align: center;
