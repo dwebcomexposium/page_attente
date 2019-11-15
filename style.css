@@ -55,6 +55,7 @@
 .containeroptions p.titlecolor {
     padding-top: 20px;
     display: block;
+    border-bottom: 1px solid #c4c4c4;
 }
 .containeroptions img {
     width: 25px;
