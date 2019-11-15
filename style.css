@@ -26,8 +26,9 @@
     background: url(https://picsum.photos/1920/1080) !important;
 }
 .imagegif{
-    background: url(https://visualcocaine.org/public/uploads/large/11519389095qeqeumqx1ytugzwmap4mthrhrzd6bvrsixgziavorvlpg2fknp9kemjb0kw91ms4fljbwo4pjm4986gvdvr5enfv7gpvxr0ix72e.gif
-    ) !important;
+    background: url(https://media3.giphy.com/media/xn2tua3QvDIOY/giphy.gif) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 .containeroptions {
     position: fixed;
