@@ -210,7 +210,10 @@ img#logo {
 	max-width: 100%;
     max-height: 100%;
 }
-
+.contentswitchlanguage{
+    flex: 0;
+min-width: 15%;
+}
 
 .ctaprincipal {
     transition: var(--main-animation-transition);
@@ -249,6 +252,28 @@ img#logo {
 
 h2{
     	margin: 1em auto 1em auto;
+}
+.col-sm.rscontainer{
+    padding-right: 0;
+}
+.nav{
+    float: right;
+}
+.nav-link:first-child{
+    border-left: #f4f4f4 solid 1px;
+}
+.nav-link:hover{
+    border-bottom: 2px solid var(--main-color);
+    line-height: 32px;
+}
+.nav-link{
+    height: 100%;
+    min-height: 50px;
+    line-height: 34px;
+    border-right: 1px solid #f4f4f4;
+    transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
 }
 .miseenavant{
     background: var(--main-color);
@@ -294,6 +319,7 @@ h2{
     font-size: 12px;
     color: #a1a1a1;
 }
+
 @media (orientation: landscape) and (max-width:1024px) {
     .jumbotron > .container > .row{
         flex-direction: column;
@@ -347,6 +373,19 @@ h2{
 @media screen and (max-width:478px){
     .text-center{
         place-content:center;
+    }
+    .nav{
+       width: 100%;
+    }
+    .attentetitre{
+        text-align: center;
+        padding: 2px 0px;
+    }
+    .col-sm.rscontainer{
+        padding: 0;
+    }
+    .contentswitchlanguage{
+        min-width: 100%;
     }
     .nombrecountdown {
         padding: 0 10px !important;
