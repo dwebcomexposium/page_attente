@@ -152,7 +152,7 @@
     display: flex;
     align-content: center;
     height: 100px;
-    transform: translateY(-131px);
+    transform: translateY(-60px);
     margin: 0 auto !important;
     width: 60%;
     box-shadow: 0 8px 21px rgba(0,0,0,0.1);
@@ -288,6 +288,11 @@ min-width: 15%;
 	    display: block;
     width: fit-content;
         margin: 30px auto 0 auto;
+}
+.ctaprincipal.cta2{
+    background: rgba(0,0,0,0.2);
+    border:1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .ctaprincipal:hover {
