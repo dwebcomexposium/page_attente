@@ -383,6 +383,11 @@ h2{
     color: #a1a1a1;
 }
 
+* { box-sizing: border-box; }
+
+
+
+
 @media (orientation: landscape) and (max-width:1024px) {
     .jumbotron > .container > .row{
         flex-direction: column;
