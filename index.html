@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Hello, world!</title>
   </head>
   <body>
@@ -52,7 +53,7 @@
 <!--------- REMOVE AU DESSUS ----------->
 
 
-<div class="row verticalcenter header">
+<div class="row verticalcenter header" data-aos="fade-down">
 		<div class="col-sm attentetitre">
 			Bientôt disponible
 		</div>
@@ -89,11 +90,11 @@
 		</div>
   </div>
 	  
-   <div class="jumbotron jumbotron-fluid">
-	  
-  <div class="container hundred">
+<!---------- Héro ----------->
 
-	  <div class="row hundred">
+<div class="jumbotron jumbotron-fluid" data-aos="fade-zoom-in" data-aos-duration="500">
+  <div class="container hundred">
+	  <div class="row hundred" data-aos="fade-in" data-aos-delay="600" data-aos-duration="200">
 		<div class="col alignselfcenter align-center">
 		 <img src="img/logoremplissageblanc.png" alt="logo Créations & savoir-faire" id="logo">
 		<h1 class="display-4">LE NOM DU SALON</h1>
@@ -108,6 +109,8 @@
 	  
   </div>
 </div>
+
+<!---------- Fin héro ----------->
 	  
 <div class="container containercontent">
 
@@ -118,15 +121,15 @@
 <!------------ 3 images avec textes ---------------->
 <h2 class="align-center">Un titre de section</h2>
 <div class="row containertroisimages">
-	<div class="col troisimages">
+	<div class="col troisimages"  data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800" data-aos-delay="0">
 		<p>Lorem ipsum dolor</p>
 		<img src="https://picsum.photos/400/500" alt="Image du salon">
 	</div>
-	<div class="col troisimages">
+	<div class="col troisimages"  data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800" data-aos-delay="200">
 		<p>Lorem ipsum dolor</p>
 		<img src="https://picsum.photos/400/500" alt="Image du salon">
 	</div>
-	<div class="col troisimages">
+	<div class="col troisimages"  data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-duration="800" data-aos-delay="400">
 		<p>Lorem ipsum dolor</p>
 		<img src="https://picsum.photos/400/500" alt="Image du salon">
 	</div>
@@ -138,8 +141,8 @@
 
 <!-------------Contenu image et texte--------------->	
 <div class="row rowtexte">
-	<div class="col bcimagedutexte"></div>
-	<div class="col">
+	<div class="col bcimagedutexte" data-aos="zoom-in-right" data-aos-duration="400"></div>
+	<div class="col" data-aos="fade-in" data-aos-delay="500">
 		<h2>Un titre de section</h2>
 		<p>Une audience double pour vous permettre d’avoir un moment privilégié entre professionnels et
 		tisser des relations fortes, ainsi qu’une ouverture au grand public pour leur « mettre entre les mains
@@ -156,7 +159,7 @@
 
 
 <!-------------Texte de mise en avant avec fond de couleur------------------->	
-<div class="row">
+<div class="row" data-aos="zoom-in">
 	<p class="miseenavant"><em>« Plus qu’un salon traditionnel, plus qu’une simple exposition, Connect Paris est une expérience
 		inédite. »</em></p>
 </div>
@@ -167,14 +170,14 @@
   <div class="row">
 
 	<div class="number-container">
-		<div class="number">
+		<div class="number" data-aos="fade-left">
 			<span>+de 50 000</span>
 			<p>vis Grand Public attendus : technophiles CSP+, familles multigénérationnelles
 				connectées, early adopter curieux et intéressés par le monde connecté dans lequel ils pourront se
 				projeter.
 			</p>
 		</div>
-		<div class="number">
+		<div class="number" data-aos="fade-right">
 			<span>+de 1000</span>
 			<p>vis professionnels attendus : grands distributeurs aux points de vente physiques ou plure
 				player e-commercant, presse spécialisée, détecteur de nouvelles tendances venus tester de
@@ -204,7 +207,10 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+			AOS.init();
+		  </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
