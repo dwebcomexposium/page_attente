@@ -7,7 +7,7 @@
 
 :root {
   --main-color:#6D986E ;                /*Couleur principale du salon*/	
-  --main-image: url(https://cdn.pixabay.com/photo/2017/08/02/01/37/dark-2569588_1280.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(https://images.pexels.com/photos/1054554/pexels-photo-1054554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
   --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
@@ -19,79 +19,6 @@
 /*******************************************/
 
 
-
-
-/************** EXEMPLE DE CHANGEMENT/SETTINGS ****************/
-
-.imagefix{
-    background: url(https://picsum.photos/1920/1080) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-.imagegif{
-    background: url(https://media3.giphy.com/media/xn2tua3QvDIOY/giphy.gif) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-.containeroptions {
-    position: fixed;
-    background: #ffffff;
-    right: 0;
-    transition: ease 0.2s;
-    margin-top: 10vh;
-    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
-    z-index: 999;
-    
-}
-.insidesetting{
-    max-height: 80vh;
-    overflow: auto;
-    padding: 50px;
-}
-.insidesetting::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-.insidesetting::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-    border-radius: 10px;
-  }
-.insidesetting::-webkit-scrollbar-track {
-    background: #f4f4f4; 
-  }
-.containeroptions span {
-    display: block;
-    font-size: 10px;
-}
-.containeroptions p.titlecolor {
-    padding-top: 20px;
-    display: block;
-    border-bottom: 1px solid #c4c4c4;
-}
-.containeroptions img {
-    width: 25px;
-}
-.containeroptions li{
-    list-style-type: none;
-}
-.containeroptions .setting {
-    position: absolute;
-    left: -55px;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
-}
-.containeroptions.settingclose {
-    transform: translateX(315px);
-}
-.containeroptions.settingopen{
-    transform: translateX(0) !important;
-    max-width: 578px;
-}  
-.none{
-    display: none !important;
-}
-/****************************************************/
 
 .header{
     min-height: 50px;
@@ -203,8 +130,8 @@
   color: #000000;
   background: #f4f4f4 ;
   background-position: center center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   height: 100vh;
   margin-bottom: 1em;
   background: var(--main-image);
