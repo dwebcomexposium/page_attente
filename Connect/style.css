@@ -404,7 +404,10 @@ margin-right: 1em;
     top: -50px;
     font-family: 'Catamaran', sans-serif;
 }
-
+.half{
+    width: 50%;
+    margin: 5em auto 5em auto;
+}
 /************ SLIDER **************/
 /* .slider{
     flex-wrap: nowrap;
@@ -564,5 +567,11 @@ margin-right: 1em;
         flex: 0 0 calc(100% - 20px);
         max-width: calc(100% - 20px);
         margin-bottom: 20px;
+    }
+    .jumbotron{
+        height: 90vh;
+    }
+    .half{
+        width: 100%;
     }
 }
