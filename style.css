@@ -102,8 +102,10 @@
     position: relative;
 }
 .containertroisimages{
-    margin-bottom: 6em;
     place-content: space-between;
+    margin: 2em 0 0 0 !important;
+    display: flex;
+    width: 100%;
 }
 .troisimages{
     flex: 0 0 calc(33.3333% - 20px);
@@ -351,7 +353,6 @@ h2{
     width: 100%;
     display: block;
     border-radius: 15px;
-    margin: 5em 1em 4em 1em;
     padding: 2em 2em;
     text-align: center;
     color: #ffffff;
@@ -361,7 +362,6 @@ h2{
 } 
 .number-container{
     display: flex;
-    margin-top: 2em;
     flex-wrap: wrap;
 }
 .number{
@@ -393,7 +393,61 @@ h2{
 
 * { box-sizing: border-box; }
 
+/****** GESTION ROW ***********/
 
+.row{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.jumbotron .row{
+    margin: inherit;
+}
+* { box-sizing: border-box; }
+
+.containercontent > .row:first-child{
+    margin-top: 2em;
+}
+
+
+/****** CITATION ******/
+
+.citation{
+    background: #f4f4f4;
+    width: 100%;
+    padding: 2em;
+    position: relative;
+    
+}
+.citation p{
+    font-size: 1.4em;
+    padding: 2em 0;
+}
+.citation span{
+    display: block;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+.citation span.citationqui{
+    font-weight: bold;
+}
+.citation span.citationwhat{
+    color: #838383;
+}
+.citation:before{
+    content: ' " ';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: var(--main-color);
+    font-size: 7em;
+    font-family: initial;
+    top: -50px;
+    font-family: 'Catamaran', sans-serif;
+}
+.half{
+    width: 50%;
+    margin: 5em auto 5em auto;
+}
 /************ SLIDER **************/
 /* .slider{
     flex-wrap: nowrap;
@@ -505,6 +559,15 @@ h2{
     .nav{
        width: 100%;
     }
+    .containercontent > .row:first-child {
+        margin-top: 2em;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .row {
+        width: 100%;
+        margin: 5em auto 5em auto;
+    }
     .attentetitre{
         text-align: center;
         padding: 2px 0px;
@@ -537,10 +600,15 @@ h2{
         flex-direction: column;
         align-content: center;
         margin: auto;
+        width: 100%;
+        align-items: center;
     }
     .troisimages{
         flex: 0 0 calc(100% - 20px);
         max-width: calc(100% - 20px);
         margin-bottom: 20px;
+    }
+    .half{
+        width: 100%;
     }
 }
