@@ -382,6 +382,9 @@ h2{
     text-align: center;
     margin: 30px 0 0 0;
 }
+
+/********** FOOTER ***************/
+
 .footer{
     text-align: center;
     border-top: 1px solid #a1a1a1;
@@ -391,6 +394,27 @@ h2{
     color: #a1a1a1;
 }
 
+.logofooter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.logofooter img {
+    max-width: 100px;
+}
+.footer ul{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.footer ul li a{
+    color: #a1a1a1;
+}
 * { box-sizing: border-box; }
 
 /****** GESTION ROW ***********/
@@ -447,6 +471,42 @@ h2{
 .half{
     width: 50%;
     margin: 5em auto 5em auto;
+}
+
+/*****************************************/
+/*********Page mentions légales***********/
+/*****************************************/
+
+/***** Titre de la page *****/
+
+.titreart{
+    min-height: 30vh;
+    background: #f4f4f4;
+    margin-top: 0 !important;
+    align-content: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+.titreart a{
+    color: var(--main-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.titreart h1{
+    font-size: 1.7em;
+}
+.innerpage h2{
+    text-align: left;
+    margin: 1em 0;
+    font-size: 1.3em;
+    width: 100%;
+}
+.innerpage .container a{
+    display: contents;
+}
+.innerpage #logo{
+    max-width: 70px;
+    margin: 0 15px 0 0;
 }
 /************ SLIDER **************/
 /* .slider{
@@ -558,6 +618,16 @@ h2{
     }
     .nav{
        width: 100%;
+    }
+    .titreart a{
+        text-align: left;
+    }
+    .titreart{
+        min-height: 27vh;
+        margin-bottom: 0 !important;
+    }
+    .innerpage .container .row{
+        margin: 0 auto !important;
     }
     .containercontent > .row:first-child {
         margin-top: 2em;
