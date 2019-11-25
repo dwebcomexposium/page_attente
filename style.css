@@ -395,12 +395,12 @@ h2{
 }
 
 .logofooter {
-    display: flex;
     width: 100%;
     justify-content: center;
 }
 .logofooter img {
     max-width: 100px;
+    margin: 0 10px 0 10px;
 }
 .footer ul{
     text-align: center;
