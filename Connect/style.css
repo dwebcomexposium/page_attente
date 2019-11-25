@@ -21,6 +21,9 @@
 body{
     background: #f4f4f4;
 }
+body.innerpage {
+    background: #ffffff;
+}
 
 .header{
     min-height: 50px;
