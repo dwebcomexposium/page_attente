@@ -471,19 +471,22 @@ margin-right: 1em;
 /***** Titre de la page *****/
 
 .titreart{
-    min-height: 30vh;
+    min-height: 45vh;
     background: #f4f4f4;
     margin-top: 0 !important;
     align-content: center;
     justify-content: center;
-    flex-direction:column ;
+    flex-direction: column;
+    transform: translateY(-50px);
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 0 !important;
 }
 .titreart a{
     color: var(--main-color);
     margin-bottom: 15px;
     text-align: center;
+    font-size: 11px;
 }
 .titreart h1{
     font-size: 1.7em;
@@ -500,6 +503,10 @@ margin-right: 1em;
 .innerpage #logo{
     max-width: 70px;
     margin: 0 15px 0 0;
+}
+.innerpage .container .row:first-child{
+    margin-top: 0em !important;
+    margin-bottom: 5em !important;
 }
 
 /************ SLIDER **************/
@@ -617,7 +624,7 @@ margin-right: 1em;
         text-align: left;
     }
     .titreart{
-        min-height: 27vh;
+        min-height: 40vh;
         margin-bottom: 0 !important;
     }
     .innerpage .container .row{
