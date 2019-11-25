@@ -13,7 +13,7 @@
 	
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
-  --content-imagetexte: url(https://picsum.photos/1000/1000); /*** Image du contenu avec texte à droite ***/
+  --content-imagetexte: url(https://media.gettyimages.com/photos/neon-cable-linking-vases-picture-id1165765429?s=2048x2048); /*** Image du contenu avec texte à droite ***/
 }
 
 /*******************************************/
@@ -49,6 +49,11 @@ body.innerpage {
     -moz-transition: ease-in-out 0.2s;
     -webkit-transition: ease-in-out 0.2s;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.troisimages img {
+    max-height: 500px;
 }
 .troisimages p {
     position: absolute;
@@ -195,7 +200,7 @@ body.innerpage {
 	margin-bottom: 0;
 }
 img#logo {
-    max-width: 150px;
+    max-width: 230px;
     margin-bottom: 2em;
 }
 .verticalcenter{
