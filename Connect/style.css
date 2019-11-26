@@ -45,6 +45,7 @@ body.innerpage {
     overflow: hidden;
     position: relative;
     max-height: 500px;
+    min-height: 500px;
     transition: ease-in-out 0.2s;
     -moz-transition: ease-in-out 0.2s;
     -webkit-transition: ease-in-out 0.2s;
