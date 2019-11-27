@@ -139,9 +139,7 @@ body.innerpage {
     margin: 13px auto 0 auto;
     font-size: 1em;
 }
-.innerpage h3 {
-    font-size: 1.1em;
-}
+
 .jumbotron {
   color: #000000;
   background: #f4f4f4 ;
@@ -556,6 +554,7 @@ margin-right: 1em;
     display: block;
     width: 100%;
     padding: 20px 0;
+    font-size: 1.1em;
 }
 /************ SLIDER **************/
 /* .slider{
