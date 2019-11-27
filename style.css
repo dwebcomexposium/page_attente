@@ -91,6 +91,30 @@
 .none{
     display: none !important;
 }
+
+.downloadlegal span {
+    display: block;
+    font-size: 11px;
+    color: #a9a9a9;
+    font-style: italic;
+}
+.downloadlegal {
+    background: #f4f4f4;
+    padding: 2em 4em;
+    position: relative;
+}
+.downloadlegal:before {
+    content: '';
+    position: absolute;
+    background: url(img/download.png);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    left: 15px;
+    opacity: 0.5;
+}
+
 /****************************************************/
 
 .header{
@@ -517,6 +541,41 @@ h2{
 .innerpage .container .row:first-child{
     margin-top: 0em !important;
     margin-bottom: 5em !important;
+}
+
+/************ TABLE ***************/
+#tableprivacy {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tableprivacy td, #tableprivacy th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tableprivacy tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tableprivacy tr:hover {background-color: #ddd;}
+  
+  #tableprivacy th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--main-color);
+    color: white;
+  }
+  b, strong{
+      display: contents;
+  }
+  .innerpage b,.innerpage strong,.innerpage p{
+    display: contents;
+}
+.innerpage h3  {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
 }
 
 /************ SLIDER **************/

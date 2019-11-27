@@ -7,7 +7,7 @@
 
 :root {
   --main-color:#4169E1 ;                /*Couleur principale du salon*/	
-  --main-image: url(img/backgroundjumbotron.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(img/bc-header.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
   --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
@@ -139,7 +139,9 @@ body.innerpage {
     margin: 13px auto 0 auto;
     font-size: 1em;
 }
-
+.innerpage h3 {
+    font-size: 1.1em;
+}
 .jumbotron {
   color: #000000;
   background: #f4f4f4 ;
@@ -151,6 +153,7 @@ body.innerpage {
   background: var(--main-image);
   color: var(--color-hero);
   margin-top: -50px;
+  position: relative;
 }
 .jumbotron ul{padding: 0;}
 .jumbotron ul li{
@@ -523,7 +526,37 @@ margin-right: 1em;
     margin-top: 0em !important;
     margin-bottom: 5em !important;
 }
-
+/************ TABLE ***************/
+#tableprivacy {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tableprivacy td, #tableprivacy th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tableprivacy tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tableprivacy tr:hover {background-color: #ddd;}
+  
+  #tableprivacy th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--main-color);
+    color: white;
+  }
+  .innerpage b,.innerpage strong,.innerpage p{
+    display: contents;
+}
+.innerpage h3  {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
 /************ SLIDER **************/
 /* .slider{
     flex-wrap: nowrap;
