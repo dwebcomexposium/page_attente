@@ -146,7 +146,7 @@ body.innerpage {
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 1em;
   background: var(--main-image);
   color: var(--color-hero);
@@ -202,7 +202,7 @@ body.innerpage {
 	margin-bottom: 0;
 }
 img#logo {
-    max-width: 350px;
+    max-width: 500px;
     margin-bottom: 2em;
 }
 .verticalcenter{
@@ -247,6 +247,7 @@ min-width: 15%;
 .ctaprincipal:hover {
     color: var(--basic-color);
     text-decoration: none;
+    box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
     -webkit-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 20px -10px rgba(0,0,0,0.57);
 }
@@ -652,6 +653,9 @@ margin-right: 1em;
     .row {
         width: 100%;
         margin: 5em auto 5em auto;
+    }
+    img#logo {
+        max-width: 330px;
     }
     .attentetitre{
         text-align: center;
