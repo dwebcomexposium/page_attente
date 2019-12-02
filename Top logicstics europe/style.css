@@ -11,7 +11,7 @@
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
   --color-hero: #000000;   /*** Couleur du texte du héro, h1, date... ***/
 	
-  --basic-color: #000000;               /*Couleur de base du texte, par défaut : #ffffff */ 	
+  --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
   --content-imagetexte: url(img/Image_de_fond_blanc.jpg); /*** Image du contenu avec texte à droite ***/
 }
@@ -31,7 +31,7 @@
 .header{
     min-height: 50px;
     width: 80%;
-    background: #fff;
+    background: #202020;
     margin: auto !important;
     z-index: 99;
     position: relative;
@@ -109,11 +109,12 @@
     overflow: hidden;
     z-index: 1;
     border-radius: 10px;
+    background: #2020202e;
 }
 .counter p#countdown {
     width: 100%;
     margin: 0;
-    color: #000000;
+    color: #ffffff;
 }
 .counter .nombrecountdown{
     display: inline-block;
@@ -229,7 +230,7 @@ min-width: 15%;
     border-radius: 40px;
     font-size: 11px;
     border: 1px solid var(--main-color);
-    background: #ffffff;
+    background: #202020;
     color: var(--basic-color);
 	    display: block;
     width: fit-content;
@@ -508,7 +509,9 @@ textarea:focus{
     padding: 20px 0;
     font-size: 1.1em;
 }
-
+.attentetitre{
+    color: #e4e4e4;
+}
 /************ SLIDER **************/
 /* .slider{
     flex-wrap: nowrap;
