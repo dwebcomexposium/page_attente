@@ -139,7 +139,15 @@ body.innerpage {
     margin: 13px auto 0 auto;
     font-size: 1em;
 }
-
+/* .jumbotron:before {
+    content: ' ';
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+} */
 .jumbotron {
   color: #000000;
   background: #f4f4f4 ;
