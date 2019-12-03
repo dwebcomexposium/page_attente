@@ -7,11 +7,11 @@
 
 :root {
   --main-color:#ebc300 ;                /*Couleur principale du salon*/	
-  --main-image: url(img/Image_de_fond_jaune2.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(img/Image_de_fond_jaune3.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
-  --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
+  --color-hero: #000000;   /*** Couleur du texte du héro, h1, date... ***/
 	
-  --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
+  --basic-color: #202020;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
   --content-imagetexte: url(img/Image_de_fond_blanc.jpg); /*** Image du contenu avec texte à droite ***/
 }
@@ -38,7 +38,7 @@ html, body {
 .header{
     min-height: 50px;
     width: 80%;
-    background: #202020;
+    background: #ffffff;
     margin: auto !important;
     z-index: 99;
     position: relative;
@@ -150,7 +150,7 @@ html, body {
   background: #f4f4f4 ;
   background-position: center center !important;
   background-repeat: no-repeat !important;
-  background-size: 137% !important;
+  background-size: cover !important;
   height: 100vh;
   margin-bottom: 1em;
   background: var(--main-image);
@@ -246,7 +246,7 @@ min-width: 15%;
         margin: 30px auto 0 auto;
 }
 .ctaprincipal.cta2{
-    background: var(--main-color);
+    background: #ffffff;
     color: #202020;
     margin-left: 20px;
 }
@@ -519,7 +519,7 @@ textarea:focus{
     font-size: 1.1em;
 }
 .attentetitre{
-    color: #e4e4e4;
+    color: #202020;
 }
 /************ SLIDER **************/
 /* .slider{
