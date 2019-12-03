@@ -7,7 +7,7 @@
 
 :root {
   --main-color:#4169E1 ;                /*Couleur principale du salon*/	
-  --main-image: url(img/bc-header.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(img/bc-header-2.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
   --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
