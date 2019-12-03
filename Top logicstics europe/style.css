@@ -239,7 +239,7 @@ min-width: 15%;
 .ctaprincipal.cta2{
     background: rgba(0,0,0,0.2);
     border:1px solid var(--main-color);
-    color: #000000;
+    color: #ffffff;
 }
 
 .ctaprincipal:hover {
