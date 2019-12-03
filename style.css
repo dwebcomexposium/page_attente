@@ -116,7 +116,11 @@
 }
 
 /****************************************************/
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 .header{
     min-height: 50px;
     width: 80%;

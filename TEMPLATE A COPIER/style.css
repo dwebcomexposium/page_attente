@@ -21,101 +21,11 @@
 
 
 
-/************** EXEMPLE DE CHANGEMENT/SETTINGS ****************/
-
-.imagefix{
-    background: url(https://picsum.photos/1920/1080) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-.imagegif{
-    background: url(https://media3.giphy.com/media/xn2tua3QvDIOY/giphy.gif) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-.containeroptions {
-    position: fixed;
-    background: #ffffff;
-    right: 0;
-    transition: ease 0.2s;
-    margin-top: 10vh;
-    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
-    z-index: 999;
-    
-}
-.insidesetting{
-    max-height: 80vh;
-    overflow: auto;
-    padding: 50px;
-}
-.insidesetting::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-.insidesetting::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-    border-radius: 10px;
-  }
-.insidesetting::-webkit-scrollbar-track {
-    background: #f4f4f4; 
-  }
-.containeroptions span {
-    display: block;
-    font-size: 10px;
-}
-.containeroptions p.titlecolor {
-    padding-top: 20px;
-    display: block;
-    border-bottom: 1px solid #c4c4c4;
-}
-.containeroptions img {
-    width: 25px;
-}
-.containeroptions li{
-    list-style-type: none;
-}
-.containeroptions .setting {
-    position: absolute;
-    left: -55px;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 6px 9px rgba(0,0,0,0.1);
-}
-.containeroptions.settingclose {
-    transform: translateX(315px);
-}
-.containeroptions.settingopen{
-    transform: translateX(0) !important;
-    max-width: 578px;
-}  
-.none{
-    display: none !important;
-}
-
-.downloadlegal span {
-    display: block;
-    font-size: 11px;
-    color: #a9a9a9;
-    font-style: italic;
-}
-.downloadlegal {
-    background: #f4f4f4;
-    padding: 2em 4em;
-    position: relative;
-}
-.downloadlegal:before {
-    content: '';
-    position: absolute;
-    background: url(img/download.png);
-    width: 40px;
-    height: 40px;
-    background-position: center;
-    background-size: contain;
-    left: 15px;
-    opacity: 0.5;
-}
-
-/****************************************************/
 
 .header{
     min-height: 50px;
