@@ -7,13 +7,13 @@
 
 :root {
   --main-color:#ebc300 ;                /*Couleur principale du salon*/	
-  --main-image: url(img/Image_de_fond_jaune3.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(img/Image_de_fond_blanc.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
   --color-hero: #000000;   /*** Couleur du texte du héro, h1, date... ***/
 	
   --basic-color: #202020;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
-  --content-imagetexte: url(img/Image_de_fond_blanc.jpg); /*** Image du contenu avec texte à droite ***/
+  --content-imagetexte: url(img/Image_de_fond_jaune.jpg); /*** Image du contenu avec texte à droite ***/
 }
 
 /*******************************************/
@@ -42,6 +42,7 @@ html, body {
     margin: auto !important;
     z-index: 99;
     position: relative;
+    box-shadow: 0px 9px 20px rgba(0,0,0,0.07);
 }
 .containertroisimages{
     place-content: space-between;
@@ -144,7 +145,9 @@ html, body {
     margin: 13px auto 0 auto;
     font-size: 1em;
 }
-
+.align-left{
+    text-align: left;
+}
 .jumbotron {
   color: #000000;
   background: #f4f4f4 ;
@@ -157,6 +160,15 @@ html, body {
   color: var(--color-hero);
   margin-top: -50px;
 }
+.jumbotron:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background: #f4f4f4;
+}
 .jumbotron ul{padding: 0;}
 .jumbotron ul li{
     list-style-type: none;
@@ -165,11 +177,22 @@ html, body {
 .align-center{
     text-align: center;
 }
-.jumbotron p{
-	    margin-top: 2rem;
-	font-size: 1.3em;
+.jumbotron p {
+    /* margin-top: 2rem; */
+    font-size: 1.3em;
     margin-bottom: 0rem;
     letter-spacing: 0.1em;
+    display: table-cell;
+    position: relative;
+}
+.jumbotron p:before {
+    bottom: 3px;
+    content: ' ';
+    background: #ebc300;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 .jumbotron span.lieu{
 	font-size: 12px;
@@ -210,8 +233,9 @@ html, body {
 	margin-bottom: 0;
 }
 img#logo {
-    max-width: 300px;
+    max-width: 410px;
     margin-bottom: 2em;
+    margin-left: -22px;
 }
 .verticalcenter{
 	place-items: center;
@@ -246,7 +270,7 @@ min-width: 15%;
         margin: 30px auto 0 auto;
 }
 .ctaprincipal.cta2{
-    background: #ffffff;
+    background: var(--main-color);
     color: #202020;
     margin-left: 20px;
 }
@@ -606,6 +630,26 @@ textarea:focus{
         flex-direction: column;
         margin: 0 auto;
     }
+    .align-left {
+        text-align: center;
+    }
+    .jumbotron:before {
+        content: ' ';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        height: 64.5vh;
+        background: #f4f4f4;
+        top:inherit;
+        width: inherit;
+    }
+    .ctaprincipal.cta2{
+        margin-left: 0;
+    }
+    img#logo{
+        margin-left: inherit;
+    }
     body .jumbotron{
         background-size: cover !important;
     }
@@ -636,6 +680,12 @@ textarea:focus{
 @media screen and (max-width:478px){
     .text-center{
         place-content:center;
+    }
+    .jumbotron:before{
+        height: 77.5vh;
+    }
+    img#logo{
+        width: 350px;
     }
     .nav{
        width: 100%;
