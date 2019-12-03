@@ -7,9 +7,9 @@
 
 :root {
   --main-color:#ebc300 ;                /*Couleur principale du salon*/	
-  --main-image: url(img/Image_de_fond_jaune.jpg);  /*Fond image du thème*/ 	
+  --main-image: url(img/Image_de_fond_jaune2.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
-  --color-hero: #000000;   /*** Couleur du texte du héro, h1, date... ***/
+  --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
@@ -23,14 +23,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .jumbotron span.baseline{
     display: block;
     color: var(--color-hero);
-    text-transform: none;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 .header{
     min-height: 50px;
@@ -163,13 +166,16 @@ html, body {
     text-align: center;
 }
 .jumbotron p{
-	    margin-top: 1rem;
+	    margin-top: 2rem;
 	font-size: 1.3em;
     margin-bottom: 0rem;
+    letter-spacing: 0.1em;
 }
-.jumbotron span{
-	    font-size: 12px;
+.jumbotron span.lieu{
+	font-size: 12px;
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: block;
 }
 .alignselfcenter{
 	align-self:center;
@@ -228,22 +234,21 @@ min-width: 15%;
     transition: var(--main-animation-transition);
     -moz-transition: var(--main-animation-transition);
     -webkit-transition: var(--main-animation-transition);
-    padding: 12px 38px;
+    padding: 20px 38px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 40px;
     font-size: 11px;
-    border: 1px solid var(--main-color);
     background: #202020;
-    color: var(--basic-color);
+    color: var(--main-color);
 	    display: block;
     width: fit-content;
         margin: 30px auto 0 auto;
 }
 .ctaprincipal.cta2{
-    background: rgba(0,0,0,0.2);
-    border:1px solid var(--main-color);
-    color: #ffffff;
+    background: var(--main-color);
+    color: #202020;
+    margin-left: 20px;
 }
 
 .ctaprincipal:hover {
