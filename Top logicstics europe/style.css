@@ -13,7 +13,7 @@
 	
   --basic-color: #202020;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
-  --content-imagetexte: url(img/Image_de_fond_jaune.jpg); /*** Image du contenu avec texte à droite ***/
+  --content-imagetexte: url(img/meeting.jpg); /*** Image du contenu avec texte à droite ***/
 }
 
 /*******************************************/
