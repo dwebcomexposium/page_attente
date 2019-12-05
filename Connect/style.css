@@ -13,7 +13,7 @@
 	
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
-  --content-imagetexte: url(https://media.gettyimages.com/photos/neon-cable-linking-vases-picture-id1165765429?s=2048x2048); /*** Image du contenu avec texte à droite ***/
+  --content-imagetexte: url(img/vase.jpg); /*** Image du contenu avec texte à droite ***/
 }
 
 /*******************************************/
