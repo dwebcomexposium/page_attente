@@ -691,6 +691,12 @@ margin-right: 1em;
     .innerpage .container .row{
         margin: 0 auto !important;
     }
+	.innerpage img#logo{
+		display: block;
+		text-align: center;
+		margin: 15px auto 0 auto;
+		max-width: 100px;
+	}
     .containercontent > .row:first-child {
         margin-top: 2em;
         width: 100%;

@@ -612,6 +612,12 @@ textarea:focus{
     .text-center{
         place-content:center;
     }
+	.innerpage img#logo{
+		display: block;
+		text-align: center;
+		margin: 15px auto 0 auto;
+		max-width: 100px;
+	}
     .nav{
        width: 100%;
     }

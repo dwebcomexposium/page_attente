@@ -712,6 +712,12 @@ textarea:focus{
     .nav{
        width: 100%;
     }
+	.innerpage img#logo{
+		display: block;
+		text-align: center;
+		margin: 15px auto 0 auto;
+		max-width: 100px;
+	}
     .titreart a{
         text-align: left;
     }
