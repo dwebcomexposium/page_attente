@@ -9,7 +9,7 @@
   --main-color:#6D986E ;                /*Couleur principale du salon*/	
   --main-image: url(https://cdn.pixabay.com/photo/2017/08/02/01/37/dark-2569588_1280.jpg);  /*Fond image du thème*/ 	
   --fond-logo:rgba(255,255,255,0.5);    /*Fond blanc flou du logo*/
-  --color-hero: #574f4f;   /*** Couleur du texte du héro, h1, date... ***/
+  --color-hero: #ffffff;   /*** Couleur du texte du héro, h1, date... ***/
 	
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
@@ -612,12 +612,6 @@ textarea:focus{
     .text-center{
         place-content:center;
     }
-	.innerpage img#logo{
-		display: block;
-		text-align: center;
-		margin: 15px auto 0 auto;
-		max-width: 100px;
-	}
     .nav{
        width: 100%;
     }
