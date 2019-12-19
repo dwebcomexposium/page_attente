@@ -636,9 +636,16 @@ textarea:focus{
     .nav{
        width: 100%;
     }
+	.jumbotron{
+		height: 90vh;
+	}
     .titreart a{
         text-align: left;
     }
+	img#logo {
+    max-width: 250px;
+    margin-bottom: 2em;
+}
     .titreart{
         min-height: 40vh;
         margin-bottom: 0 !important;
