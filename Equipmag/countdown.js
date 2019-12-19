@@ -1,6 +1,6 @@
 // COUNTDOWN
 
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Sept 15, 2020 09:00:00").getTime();
 
 var x = setInterval(function() {
 var now = new Date().getTime();
