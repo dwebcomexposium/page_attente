@@ -14,6 +14,7 @@
   --basic-color: #ffffff;               /*Couleur de base du texte, par défaut : #ffffff */ 	
   --main-animation-transition : ease-in 0.5s; /* Animation hover */
   --content-imagetexte: url(img/Sans_titre__14_.png); /*** Image du contenu avec texte à droite ***/
+	--content-imagetexte2: url(img/image2.png);
 }
 
 /*******************************************/
@@ -263,6 +264,10 @@ min-width: 15%;
     background-size: cover;
     margin-right: 40px;
     border-radius: 20px;
+	min-height: 350px;
+}
+.bcimagedutexte2{
+    background: var(--content-imagetexte2) !important;
 }
 
 h2{
